@@ -2,7 +2,7 @@
 ### Hi there 👋
 
 - 🔭 I’m M. AsadUllah (محمد اسداللہ)
-- 🏢 I work at a small company called Microsoft help building and supporting the .NET Community
+- 🏢 I work at a open source platform called GitHub Community
 - 🌱 I blog about coding & life: https://bit.ly/m-asadullah
 - 🎙 I have several podcasts: https://mergeconflict.fm, https://blunders.fm, https://nintendodispatch.com
 - 🦜 I’m on Twitter https://twitter.com/_MAsadUllah
