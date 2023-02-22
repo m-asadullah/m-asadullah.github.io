@@ -1,4 +1,4 @@
-# m-asadullah.github.io
+# m-asadullah
 ### Hi there 👋
 
 - 🔭 I’m M. AsadUllah (محمد اسداللہ)
