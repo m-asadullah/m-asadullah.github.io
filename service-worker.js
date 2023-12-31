@@ -1,4 +1,4 @@
-const CACHE_NAME = `github-profile`;
+const CACHE_NAME = `m-asadullah-github-io`;
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
@@ -6,8 +6,8 @@ self.addEventListener('install', event => {
     const cache = await caches.open(CACHE_NAME);
     cache.addAll([
       '/',
-      '/assets/script.js',
-      '/assets/style.css'
+      '/script.js',
+      '/style.css'
     ]);
   })());
 });
