@@ -1,4 +1,4 @@
-const CACHE_NAME = `m-asadullah-github-io`;
+const CACHE_NAME = `profile-v1`;
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
