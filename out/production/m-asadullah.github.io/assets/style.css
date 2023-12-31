@@ -1,0 +1,199 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #1e2327;
+    background-size: cover;
+    animation-name: gradient-colors;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+.profile-name {
+    font-family: 'Roboto B', sans-serif;
+    font-size: xxx-large;
+    color: white;
+}
+
+.profile-username {
+    font-family: 'Roboto B', sans-serif;
+    font-size: x-large;
+    color: wheat;
+}
+
+.logo {
+    float: left;
+    width: 100px; /* Adjust the width as you like */
+    height: 100px; /* Adjust the height as you like */
+    margin: 10px; /* Add some margin around the image */
+    padding: 10px; /* Add some padding around the image */
+}
+
+.container-center-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    crop: initial;
+    height: auto;
+}
+
+.image-circle-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.box-avatar-center {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: initial;
+}
+
+.box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box-center-outlined {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.box-center-outlined-live {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
+    margin: 0 auto;
+    width: 50%;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.profile-box {
+    display: block;
+    backdrop-filter: blur(20px);
+    margin: 0 auto;
+    width: 32%;
+    padding: 50px 0;
+    border: 1px solid grey;
+    border-radius: 16px;
+}
+
+.nav-bar-top {
+    position: relative;
+    height: 64px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
+/* Style the links inside the navigation bar */
+.nav-item {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Add a hover effect to the links */
+.nav-item:hover {
+    background-color: slateblue;
+    backdrop-filter: blur(10px);
+    border-radius: 12px; /* Add a round corner to the hovered link */
+}
+
+/* Add a Active effect to the links */
+.nav-item:active {
+    background-color: darkslateblue;
+    border-radius: 4px; /* Add a round corner to the hovered link */
+}
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.list-start {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    display: inline-block; /* Make the list an inline element */
+    vertical-align: middle; /* Align the list with the middle of the image */
+}
+
+.list-center {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    float: inherit;
+    display: flex; /* Make the list an inline element */
+    vertical-align: middle; /* Align the list with the middle of the image */
+}
+
+.list-end {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    float: right;
+    display: inline-block; /* Make the list an inline element */
+    vertical-align: middle; /* Align the list with the middle of the image */
+}
+
+.gradient-text {
+    /* Fallback: Set a background color. */
+    /*background-color: #1e2327;
+    /* Create the gradient. */
+    /*background-image: linear-gradient(60deg, #f3ec78, #af4261);
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: gradient-colors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gradient-colors {
+    0%   {background-color: blueviolet}
+    25%  {background-color: dodgerblue;}
+    50%  {background-color: mediumslateblue;}
+    100% {background-color: rebeccapurple;}
+}
+
+@keyframes gradient-background {
+    0%   {background-color: #3b3b3b}
+    25%  {background-color: #383838;}
+    50%  {background-color: #595959;}
+    100% {background-color: #211f1f;}
+}
+
+
