@@ -31,6 +31,9 @@
     <link rel="fluid-icon" sizes="512x512" href="icons/m-asadullah_512.png" title="M. AsadUllah">
     <!-- reuse same icon for Safari -->
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+
+    <link rel="apple-touch-startup-image" href="icon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- mask-icon in svg -->
     <link rel="mask-icon" href="https://" color="#000000">
     <!-- og -->
@@ -81,7 +84,7 @@
 
 <script>
     if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('assets/service-worker.js', { scope: '/' });
+      navigator.serviceWorker.register('/assets/service-worker.js', { scope: '/' });
     }
 </script>
 
