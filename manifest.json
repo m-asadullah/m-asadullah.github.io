@@ -1,0 +1,17 @@
+{
+  "lang": "en-us",
+  "name": "m-asadullah",
+  "short_name": "M. AsadUllah @m-asadullah",
+  "description": "Profile of developer M. AsadUllah (@m-asadullah) on github.",
+  "start_url": "/",
+  "background_color": "#2f3d58",
+  "theme_color": "#2f3d58",
+  "orientation": "any",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/m-asadullah_512.png",
+      "sizes": "512x512"
+    }
+  ]
+}
