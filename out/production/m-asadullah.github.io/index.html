@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en-us" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/style.css">
-    <script crossorigin="anonymous" defer type="application/javascript" src="assets/script.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="style.css">
+    <script crossorigin="anonymous" defer type="application/javascript" src="script.js"></script>
+
     <meta name="description" content="Profile of M. AsadUllah (@m-asadullah) at GitHub">
 
     <meta content="origin" name="referrer">
@@ -16,23 +18,40 @@
     <!-- multiple icons for IE -->
     <meta name="msapplication-square310x310logo" content="icon_largetile.png">
 
-    <link rel="icon" href="icons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="icons/icon-24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="icons/icon-48.png">
+    <link rel="icon" type="image/png" sizes="57x57" href="icons/icon-57.png">
+    <link rel="icon" type="image/png" sizes="60x60" href="icons/icon-60.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="icons/icon-64.png">
+    <link rel="icon" type="image/png" sizes="70x70" href="icons/icon-70.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="icons/icon-72.png">
+    <link rel="icon" type="image/png" sizes="76x76" href="icons/icon-76.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/icon-96.png">
+    <link rel="icon" type="image/png" sizes="114x114" href="icons/icon-114.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="icons/icon-120.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="icons/icon-128.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="icons/icon-144.png">
+    <link rel="icon" type="image/png" sizes="150x150" href="icons/icon-150.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="icons/icon-152.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="icons/icon-180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="icons/icon-196.png">
+    <link rel="icon" type="image/png" sizes="310x310" href="icons/icon-310.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="alternate icon" class="js-site-favicon" type="image/png" sizes="48x48" href="icons/icon-48.png">
+    <link rel="icon" class="js-site-favicon" type="image/svg+xml" sizes="32x32" href="icons/icon-32.png">
 
-    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon-192x192.png">
+    <link rel="fluid-icon" sizes="512x512" href="icons/icon-512.png" title="M. AsadUllah">
 
-    <link rel="shortcut icon" href="icons/favicon.ico"/>
-    <link rel="alternate icon" class="js-site-favicon" type="image/png" sizes="48x48" href="icons/m-asadullah_48.png">
-    <link rel="icon" class="js-site-favicon" type="image/svg+xml" sizes="32x32" href="icons/m-asadullah_32.png">
-    <!-- icon -->
-    <link rel="fluid-icon" sizes="512x512" href="icons/m-asadullah_512.png" title="M. AsadUllah">
-    <!-- reuse same icon for Safari -->
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+    <link rel="apple-touch-startup-image" href="icon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <!-- mask-icon in svg -->
     <link rel="mask-icon" href="https://" color="#000000">
     <!-- og -->
@@ -46,13 +65,13 @@
 
     <meta name="turbo-cache-control" content="no-preview" data-turbo-transient="">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;800&family=Roboto:wght@100;800&display=swap"
           rel="stylesheet">
 
     <meta name="theme-color" content="#ffffff">
-    <link rel="manifest" href="/manifest.json" crossorigin="anonymous">
+    <link rel="manifest" href="manifest.json" crossorigin="anonymous">
 
 </head>
 <body>
@@ -83,7 +102,7 @@
 
 <script>
     if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('assets/service-worker.js', { scope: '/' });
+      navigator.serviceWorker.register('/service-worker.js', { scope: '/' });
     }
 </script>
 
