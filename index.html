@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" prefix="og: http://ogp.me/ns#"
       class="no-js">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta http-equiv="Content-Security-Policy" content="default-src https:"/>
     <meta name="viewport"
-          content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+          content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=no">
     <meta name="google-site-verification" content="k3aN-LjRxWaXtP9NwmqwsF00784PIDOkxdmMKkV-_aQ"/>
 
     <!-- color -->
@@ -89,6 +90,10 @@
 
     <!-- multiple icons for IE -->
     <meta name="msapplication-square310x310logo" content="icon_largetile.png">
+
+    <meta name="msapplication-TileColor" content="#0000ff">
+    <!-- 128,270,558 -->
+    <meta name="msapplication-TileImage" content="icon-white.png">
     <!-- mask-icon in svg -->
     <link rel="mask-icon" href="https://" color="#000000">
     <!--  -->
@@ -130,14 +135,20 @@
     <script type="application/javascript" src="assets/scripts/script.js" crossorigin="anonymous" defer></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XV3XYJC4K5"></script>
+    <!-- Google analytics -->
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-XV3XYJC4K5');
     </script>
+    <!-- Microsoft Clarity tracking -->
+    <script>
+        (function (c, l, a, r, i, t, y) {c[a] = c[a] || function () {(c[a].q = c[a].q || []).push(arguments) }; t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt"; y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y); })(window, document, "clarity", "script", "kf35axke0o");
+    </script>
 </head>
+
 <body>
 
 <div>
@@ -165,10 +176,11 @@
 </div>
 
 <script>
-    if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js', { scope: '/' });
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js', { scope: '/' });
     }
 </script>
 
 </body>
+
 </html>
