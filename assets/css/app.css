@@ -1,4 +1,18 @@
+html {
+    background: rgb(243, 243, 243);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15pt;
+}
+
+html,
 body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
     font-family: "Roboto", sans-serif;
     background-color: #1e2327;
     background-size: cover;
@@ -21,10 +35,14 @@ body {
 
 .logo {
     float: left;
-    width: 100px; /* Adjust the width as you like */
-    height: 100px; /* Adjust the height as you like */
-    margin: 10px; /* Add some margin around the image */
-    padding: 10px; /* Add some padding around the image */
+    width: 100px;
+    /* Adjust the width as you like */
+    height: 100px;
+    /* Adjust the height as you like */
+    margin: 10px;
+    /* Add some margin around the image */
+    padding: 10px;
+    /* Add some padding around the image */
 }
 
 .container-center-horizontal {
@@ -106,6 +124,7 @@ body {
     font-weight: bold;
     font-size: small;
 }
+
 /* Style the links inside the navigation bar */
 .nav-item {
     display: inline-block;
@@ -118,13 +137,15 @@ body {
 .nav-item:hover {
     background-color: slateblue;
     backdrop-filter: blur(10px);
-    border-radius: 12px; /* Add a round corner to the hovered link */
+    border-radius: 12px;
+    /* Add a round corner to the hovered link */
 }
 
 /* Add a Active effect to the links */
 .nav-item:active {
     background-color: darkslateblue;
-    border-radius: 4px; /* Add a round corner to the hovered link */
+    border-radius: 4px;
+    /* Add a round corner to the hovered link */
 }
 
 .img-center {
@@ -139,8 +160,10 @@ body {
     padding: 0;
     overflow: hidden;
     float: left;
-    display: inline-block; /* Make the list an inline element */
-    vertical-align: middle; /* Align the list with the middle of the image */
+    display: inline-block;
+    /* Make the list an inline element */
+    vertical-align: middle;
+    /* Align the list with the middle of the image */
 }
 
 .list-center {
@@ -151,8 +174,10 @@ body {
     align-items: center;
     overflow: hidden;
     float: inherit;
-    display: flex; /* Make the list an inline element */
-    vertical-align: middle; /* Align the list with the middle of the image */
+    display: flex;
+    /* Make the list an inline element */
+    vertical-align: middle;
+    /* Align the list with the middle of the image */
 }
 
 .list-end {
@@ -161,8 +186,10 @@ body {
     padding: 0;
     overflow: auto;
     float: right;
-    display: inline-block; /* Make the list an inline element */
-    vertical-align: middle; /* Align the list with the middle of the image */
+    display: inline-block;
+    /* Make the list an inline element */
+    vertical-align: middle;
+    /* Align the list with the middle of the image */
 }
 
 .gradient-text {
@@ -183,17 +210,37 @@ body {
 }
 
 @keyframes gradient-colors {
-    0%   {background-color: blueviolet}
-    25%  {background-color: dodgerblue;}
-    50%  {background-color: mediumslateblue;}
-    100% {background-color: rebeccapurple;}
+    0% {
+        background-color: blueviolet
+    }
+
+    25% {
+        background-color: dodgerblue;
+    }
+
+    50% {
+        background-color: mediumslateblue;
+    }
+
+    100% {
+        background-color: rebeccapurple;
+    }
 }
 
 @keyframes gradient-background {
-    0%   {background-color: #3b3b3b}
-    25%  {background-color: #383838;}
-    50%  {background-color: #595959;}
-    100% {background-color: #211f1f;}
+    0% {
+        background-color: #3b3b3b
+    }
+
+    25% {
+        background-color: #383838;
+    }
+
+    50% {
+        background-color: #595959;
+    }
+
+    100% {
+        background-color: #211f1f;
+    }
 }
-
-

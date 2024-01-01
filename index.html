@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" prefix="og: http://ogp.me/ns#"
+      class="no-js">
 <head>
     <meta charset="utf-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
     <meta name="viewport"
           content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- meta http-equiv="Content-Security-Policy" content="default-src https:"/-->
     <!-- color -->
-    <meta name="theme-color" content="#1a73e8">
+    <meta name="theme-color" content="#fff">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="white"/>
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black"/>
     <!-- manifest -->
@@ -61,8 +64,17 @@
 
     <link rel="fluid-icon" sizes="512x512" href="icons/icon-512.png" title="M. AsadUllah">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+    <meta name="apple-mobile-web-app-title" content="m-asadullah">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
     <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <!--Retina-iphone-->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+    <!--Retina-ipad-->
+    <link rel="apple-touch-icon" sizes="167x167" href="icons/icon-16.png">
+    <!--non-Retina-ipad-->
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/icon-152.png">
     <!-- third-generation iPad with high-resolution Retina display: -->
     <link rel="apple-touch-icon" sizes="144x144" href="icons/icon-144.png"/>
     <!-- iPhone with high-resolution Retina display: -->
@@ -72,8 +84,8 @@
     <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <link rel="apple-touch-icon" href="icons/icon-57.png"/>
 
-    <link rel="apple-touch-startup-image" href="icon.png">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-startup-image" href="/launch.png">
+
     <!-- multiple icons for IE -->
     <meta name="msapplication-square310x310logo" content="icon_largetile.png">
     <!-- mask-icon in svg -->
@@ -85,7 +97,7 @@
     <link rel="alternate" hreflang="x-default" href="https://m-asadullah.github.io/">
     <!--  -->
     <title>@m-asadullah | M. AsadUllah</title>
-    <meta name="description" content="Profile of M. AsadUllah (@m-asadullah) at GitHub">
+    <meta name="description" content="Profile of developer M. AsadUllah (@m-asadullah) on GitHub">
     <!-- og = opengraph -->
     <meta property="og:locale" content="en">
     <meta property="og:title" content="Profile of M. AsadUllah (@m-asadullah)">
@@ -108,13 +120,15 @@
           content="Profile of developer M. AsadUllah (@m-asadullah) hosted on GitHub for learning purposes & testing in preview."/>
     <meta name="twitter:image" content="https://m-asadullah.github.io/icons/icon-512.png"/>
     <!-- #### -->
-    <link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/app.css" media="all" crossorigin="anonymous">
 
     <meta content="origin" name="referrer">
     <meta content="https://" itemprop="image">
 
     <meta name="turbo-cache-control" content="no-preview" data-turbo-transient="">
-    <script crossorigin="anonymous" defer type="application/javascript" src="assets/scripts/script.js"></script>
+    <script type="application/javascript" src="assets/scripts/script.js" crossorigin="anonymous" defer></script>
+
+
 </head>
 <body>
 
