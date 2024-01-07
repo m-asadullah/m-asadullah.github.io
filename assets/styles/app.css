@@ -4,21 +4,17 @@ html {
     font-size: 15pt;
 }
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-}
-
 body {
     display: grid;
-    place-items: center;
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", sans-serif;
     background-color: #1e2327;
     background-size: cover;
     animation-name: gradient-colors;
     animation-duration: 60s;
     animation-iteration-count: infinite;
+    min-height: 100vh;
 }
 
 .profile-name {
@@ -118,10 +114,11 @@ body {
 }
 
 .nav-bar-top {
+    padding: 8px;
     position: relative;
     height: 64px;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-size: small;
 }
 
@@ -135,7 +132,7 @@ body {
 
 /* Add a hover effect to the links */
 .nav-item:hover {
-    background-color: slateblue;
+    background-color: dodgerblue;
     backdrop-filter: blur(10px);
     border-radius: 12px;
     /* Add a round corner to the hovered link */
@@ -143,7 +140,7 @@ body {
 
 /* Add a Active effect to the links */
 .nav-item:active {
-    background-color: darkslateblue;
+    background-color: darkblue;
     border-radius: 4px;
     /* Add a round corner to the hovered link */
 }
@@ -227,20 +224,24 @@ body {
     }
 }
 
-@keyframes gradient-background {
-    0% {
-        background-color: #3b3b3b
-    }
+/* Style the footer with a grey background and some padding */
+.footer {
+    background-color: #1e2327;
+    padding: 20px;
+    font-family: 'Roboto B', sans-serif;
+    font-size: medium;
+    bottom: 0;
+}
 
-    25% {
-        background-color: #383838;
-    }
+/* Style the footer links */
+.footer a {
+    color: grey;
+    text-decoration: none;
+    padding: 8px;
+}
 
-    50% {
-        background-color: #595959;
-    }
-
-    100% {
-        background-color: #211f1f;
-    }
+/* Change the background color on mouse-over */
+.footer a:hover {
+    background-color: #ddd;
+    color: black;
 }
