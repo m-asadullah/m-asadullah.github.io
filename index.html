@@ -29,7 +29,7 @@
           rel="stylesheet">
     <!-- css -->
     <link href="assets/styles/app.css" rel="stylesheet">
-    <link disabled href="assets/styles/dark-theme.css" rel="stylesheet">
+    <link disabled href="assets/styles/material/theme.css" rel="stylesheet">
     <!-- favicon/icons -->
     <link href="favicon.ico" rel="icon" sizes="any" type="image/x-icon">
     <link href="favicon.ico" rel="icon" type="image/x-icon">
@@ -162,31 +162,54 @@
 </head>
 
 <body>
-
-<div>
-    <nav class="nav-bar-top" role="navigation">
-        <ul class="list-center" role="list">
-            <li><a class="nav-item" href="#blogs">Blogs</a></li>
-            <li><a class="nav-item" href="#contact">Contact</a></li>
-            <li><a class="nav-item" href="#update">Update</a></li>
-            <li><a class="nav-item" href="#progress">Progress</a></li>
-        </ul>
-    </nav>
-    <div class="container-center-horizontal">
-        <div class="profile-box">
-            <div class="box-avatar-center box-center-outlined-live">
-                <img alt="avatar" class="image-circle-center" sizes="400x400" src="icons/m-asadullah_400.png">
-            </div>
-            <div style="margin-top: 36px; margin-bottom: 18px">
-                <div class="profile-name box-center">M. AsadUllah</div>
-                <div class="profile-username box-center">@m-asadullah</div>
-                <div class="button-big-2 box-center">/m-asadullah</div>
-            </div>
-
+<nav class="nav-bar-top" role="navigation">
+    <ul class="list-center" role="list">
+        <li><a class="nav-item" href="#blogs">Blogs</a></li>
+        <li><a class="nav-item" href="#contact">Contact</a></li>
+        <li><a class="nav-item" href="#update">Update</a></li>
+        <li><a class="nav-item" href="#progress">Progress</a></li>
+    </ul>
+</nav>
+<div id="body-container">
+    <div id="bottom-resources" style="background-color: #595959">
+        <h3>Resources</h3>
+        <a href="#android">Android</a>
+        <br>
+        <a href="#google">Google</a>
+        <br>
+        <a href="#tensorflow">TensorFlow</a>
+        <br>
+        <a href="#kotlin">Kotlin</a>
+        <br>
+        <a href="#kmp">KMP (Kotlin Compose Multiplatform)</a>
+        <br>
+        <a href="#ktor">Ktor</a>
+        <br>
+        <a href="mailto:someone@example.com">Send email</a>
+    </div>
+</div>
+<div class="footer">
+    <div>
+        <div style="float: left">
+            <a href="#terms">Terms</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#newsletter">Newsletter</a>
+        </div>
+        <div style="float: right">
+            <label for="language" style="color: grey;">Language</label>
+            <select name="language" id="language">
+                <optgroup label="English">
+                    <option value="en-US">English US</option>
+                    <option value="en-UK">English UK</option>
+                </optgroup>
+                <optgroup label="Arabic">
+                    <option value="ar-AE">Arabic AE</option>
+                    <option value="ar-SA">Arabic SA</option>
+                </optgroup>
+            </select>
         </div>
     </div>
 </div>
-
 <script>
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/service-worker.js', {scope: '/'});
