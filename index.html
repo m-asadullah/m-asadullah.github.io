@@ -137,34 +137,44 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XV3XYJC4K5"></script>
     <!-- Google Analytics -->
     <script>
-        window.dataLayer = window.dataLayer || [];
+        window.onload = function checkUrl() {
+            if (((document.URL || window.document.URL || window.location.href)) === "https://m-asadullah.github.io") {
+                console.log("Google Analytics enabled");
+                window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+
+                gtag('js', new Date());
+                gtag('config', 'G-XV3XYJC4K5');
+            }
         }
-
-        gtag('js', new Date());
-        gtag('config', 'G-XV3XYJC4K5');
     </script>
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () {
-                (c[a].q = c[a].q || []).push(arguments)
-            };
-            t = l.createElement(r);
-            t.async = 1;
-            t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
-            y = l.getElementsByTagName(r)[0];
-            y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "kf35axke0o");
+        window.onload = function checkUrl() {
+            if (((document.URL || window.document.URL || window.location.href)) === "https://m-asadullah.github.io") {
+                console.log("Clarity enabled");
+                (function (c, l, a, r, i, t, y) {
+                    c[a] = c[a] || function () {
+                        (c[a].q = c[a].q || []).push(arguments)
+                    };
+                    t = l.createElement(r);
+                    t.async = 1;
+                    t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+                    y = l.getElementsByTagName(r)[0];
+                    y.parentNode.insertBefore(t, y);
+                })(window, document, "clarity", "script", "kf35axke0o");
+            }
+        }
     </script>
 </head>
 
-<body>
+<body id="body">
 <header id="header">
     <!-- Navigation Bar -->
-    <nav id="nav-bar-top" class="nav-bar-top" role="navigation">
+    <nav class="nav-bar-top" id="nav-bar-top" role="navigation">
         <ul class="list-center" role="list">
             <li><a class="nav-item" href="#blogs">Blogs</a></li>
             <li><a class="nav-item" href="#contact">Contact</a></li>
@@ -245,22 +255,21 @@
         <!--Bottom Container - Resources Platform-->
         <div class="container-bottom-column">
             <h3>Resources</h3>
-            <a aria-label="" class="container-bottom-column-a" href="#android" target="_blank">Android</a>
-            <br>
-            <a aria-label="" class="container-bottom-column-a" href="#google" target="_blank">Google</a>
-            <br>
-            <a aria-label="" class="container-bottom-column-a" href="#tensorflow" target="_blank">TensorFlow</a>
-            <br>
-            <a aria-label="" class="container-bottom-column-a" href="#kotlin" target="_blank">Kotlin</a>
-            <br>
-            <a aria-label="" class="container-bottom-column-a" href="#kmp" target="_blank">KMP (Kotlin Compose
-                Multiplatform)</a>
-            <br>
-            <a aria-label="" class="container-bottom-column-a" href="#ktor" target="_blank">Ktor</a>
-            <br>
-            <a aria-label="" class="container-bottom-column-a" href="#mail" target="_blank">Send email</a>
-            <br>
-            <br>
+            <br><a aria-label="" class="container-bottom-column-a a-external" href="#edX" target="_blank">edX</a>
+            <br><a aria-label="" class="container-bottom-column-a a-external" href="#udemy" target="_blank">Udemy</a>
+            <br><a aria-label="" class="container-bottom-column-a a-external" href="#coursera"
+                   target="_blank">Coursera</a>
+            <br><a aria-label="" class="container-bottom-column-a a-external" href="#w3school"
+                   target="_blank">W3School</a>
+            <br><a aria-label="" class="container-bottom-column-a a-external" href="#codecademy" target="_blank">Codecademy</a>
+            <br><a aria-label="" class="container-bottom-column-a a-external" href="#freecodecamp" target="_blank">freecodecamp</a>
+            <br><a aria-label="" class="container-bottom-column-a a-external" href="#microsoft-learn" target="_blank">Microsoft
+            Learn</a>
+            <br><a aria-label="" class="container-bottom-column-a a-external" href="#freecodecamp" target="_blank">Cisco
+            Academy</a>
+            <br><a aria-label="" class="container-bottom-column-a a-external" href="#freecodecamp" target="_blank">Skills
+            For All</a>
+            <br><a aria-label="" class="container-bottom-column-a a-external" href="#freecodecamp" target="_blank">Hyperskills</a>
         </div>
         <!--Bottom Container - Resources Misc-->
         <div class="container-bottom-column">
@@ -329,7 +338,8 @@
             <a aria-label="" class="container-bottom-column-a" href="#behance.net/u/m-asadullah"
                target="_blank">Behance</a>
             <br>
-            <a aria-label="" class="container-bottom-column-a" href="#pinterest.com/u/m-asadullah" target="_blank">Pinterest</a>
+            <a aria-label="" class="container-bottom-column-a" href="#pinterest.com/u/m-asadullah" target="_blank">Pinterest
+            </a>
             <br>
             <a aria-label="" class="container-bottom-column-a" href="#threads.com/u/_masadullah"
                target="_blank">Thread</a>
@@ -347,38 +357,51 @@
     </div>
 </div>
 <!-- Footer -->
-<div class="footer">
+<footer>
     <div>
-        <div style="float: left; margin-bottom: 32px">
-            <a aria-label="Terms" class="footer-link" href="#terms" target="_blank">Terms</a>
-            <a aria-label="Privacy" class="footer-link" href="#privacy" target="_blank">Privacy</a>
-            <a aria-label="Newsletter" class="footer-link" href="#newsletter" target="_blank">Newsletter</a>
-            <a aria-label="Status" class="footer-link" href="#status" target="_blank">Status</a>
-            <a aria-label="Statistics" class="footer-link" href="#statics" target="_blank">Statistics</a>
-            <a aria-label="Sitemap" class="footer-link" href="#sitemap" target="_blank">Sitemap</a>
-            <a aria-label="Roadmap" class="footer-link" href="#roadmap" target="_blank">Roadmap</a>
-            <a aria-label="Cookies" class="footer-link" href="#cookies" target="_blank">Cookies</a>
-        </div>
-        <div style="float: right">
-            <label for="language" style="color: grey;">Language</label>
-            <select id="language" name="language">
-                <optgroup label="English">
-                    <option value="en-US">English US</option>
-                    <option value="en-UK">English UK</option>
-                </optgroup>
-                <optgroup label="Arabic">
-                    <option value="ar-AE">Arabic AE</option>
-                    <option value="ar-SA">Arabic SA</option>
-                </optgroup>
-            </select>
+        <div class="footer-upper">
+            <div style="float: left; margin-bottom: 32px">
+                <a aria-label="Terms" class="footer-link" href="#terms" target="_blank">Terms</a>
+                <a aria-label="Privacy" class="footer-link" href="#privacy" target="_blank">Privacy</a>
+                <a aria-label="Newsletter" class="footer-link" href="#newsletter" target="_blank">Newsletter</a>
+                <a aria-label="Status" class="footer-link" href="#status" target="_blank">Status</a>
+                <a aria-label="Statistics" class="footer-link" href="#statics" target="_blank">Statistics</a>
+                <a aria-label="Sitemap" class="footer-link" href="#sitemap" target="_blank">Sitemap</a>
+                <a aria-label="Roadmap" class="footer-link" href="#roadmap" target="_blank">Roadmap</a>
+                <a aria-label="Cookies" class="footer-link" href="#cookies" target="_blank">Cookies</a>
+            </div>
+            <div style="float: right">
+                <label for="language" style="color: grey;">Language</label>
+                <select id="language" name="language">
+                    <optgroup label="English">
+                        <option value="en-US">English US</option>
+                        <option value="en-UK">English UK</option>
+                    </optgroup>
+                    <optgroup label="Arabic">
+                        <option value="ar-AE">Arabic AE</option>
+                        <option value="ar-SA">Arabic SA</option>
+                    </optgroup>
+                </select>
+            </div>
         </div>
     </div>
-</div>
-<div class="cookie-banner" >
-    <p>By using our website, you agree to our <a href="#insert-link">cookie policy</a></p>
-    <button class="cookie-banner-close">Close</button>
-</div>
+    <div class="footer-lower">
+        <div style="float: left; margin-bottom: 32px">
+            <p>Microsoft Clarity is use in this website for analytics purpose it contained parameters to measure the
+                user
+                interaction behaviour on this website. Read more</p>
+        </div>
+    </div>
+</footer>
 
+<button aria-controls="CookieSettings" aria-expanded="false" aria-label="Cookie Settings"
+        class="cookie-settings" data-target="#CookieSettings" data-toggle="collapse">
+    <span class="cookie-icon" id="cookie-icon"></span>
+</button>
+<div class="cookie-banner" id="cooke-banner">
+    <p>By using our website, you agree to our <a href="#insert-link">Cookies Policy</a></p>
+    <button class="cookie-banner-close" id="cookie-banner-close">Close</button>
+</div>
 <!-- PWA Service Worker -->
 <script>
     if ('serviceWorker' in navigator) {

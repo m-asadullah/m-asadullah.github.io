@@ -4,10 +4,20 @@ html {
     font-size: 15pt;
 }
 
+@media print {
+    #body {
+        display: none;
+    }
+}
+
 header {
     width: 100%;
     height: 64px;
     backdrop-filter: blur(32px);
+}
+
+.header-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .nav-bar-top {
@@ -250,8 +260,8 @@ body {
 }
 
 .container-bottom-column-a:hover {
-    text-decoration: underline;
     color: black;
+    text-decoration: underline;
     text-underline-offset: 0.2em;
 }
 
@@ -389,17 +399,20 @@ for screen of <= 600px
     }
 }
 
-/* Style the footer with a grey background and some padding */
-.footer {
+footer {
     background-color: #1e2327;
-    padding: 20px;
+}
+
+/* Style the footer with a grey background and some padding */
+.footer-upper {
     font-family: 'Roboto B', sans-serif;
     font-size: medium;
+    padding: 20px;
     bottom: 0;
 }
 
 /* Style the footer links */
-.footer a {
+.footer-upper a {
     color: lightgrey;
     text-decoration: none;
     padding: 8px;
@@ -407,7 +420,7 @@ for screen of <= 600px
 }
 
 /* Change the background color on mouse-over */
-.footer a:hover {
+.footer-upper a:hover {
     background-color: #ddd;
     color: black;
 }
@@ -426,6 +439,7 @@ for screen of <= 600px
     border-radius: 5px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
+
 .cookie-banner-close {
     height: 20px;
     background-color: #777;
@@ -433,4 +447,66 @@ for screen of <= 600px
     color: white;
     border-radius: 2px;
     cursor: pointer;
+}
+
+.p:before {
+    content: "PREFIX-";
+}
+
+.p:after {
+    content: "-SUFFIX";
+}
+
+.a-internal:hover:after {
+    content: " 🡢";
+}
+
+.a-learn-more:after {
+    content: " 🡢";
+}
+
+.a-external:after {
+    content: " 🡥";
+}
+
+.cookie-settings {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10010;
+    width: 113px;
+    height: 113px;
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.32), 0 3px 6px rgba(0, 0, 0, 0.39);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.32), 0 0 3px rgba(0, 0, 0, 0.39);
+    -webkit-transform: rotate(45deg) translate(0, 80px);
+    -ms-transform: rotate(45deg) translate(0, 80px);
+    transform: rotate(45deg) translate(0, 80px);
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    padding: 6px 0 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-transition: -webkit-transform 0.15s ease-in-out;
+    transition: -webkit-transform 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: slidein;
+    animation-name: slidein
+}
+
+#cookie-icon {
+    background: url("assets/ico-cookie.svg");
+    width: 16px;
+    height: 16px;
+    display: inline-block;
 }

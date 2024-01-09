@@ -13,12 +13,14 @@ var sticky = header.offsetTop;
 function contentOnScroll() {
     if (window.scrollY > sticky) {
         header.classList.add("header-sticky");
+        header.classList.add("header-shadow");
     } else {
         header.classList.remove("header-sticky");
+        header.classList.remove("header-shadow");
     }
 }
 
 //banner of cookies to close it
-document.querySelector('.cookie-banner-close').addEventListener('click', function() {
+document.querySelector('.cookie-banner-close').addEventListener('click', function () {
     document.querySelector('.cookie-banner').style.display = 'none';
 });
